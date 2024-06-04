@@ -9,7 +9,17 @@
 If your skin will share animations with the default skin, **no welds are required at any point!** If you're welding something, you're probably doing something wrong.
 
 ## First-time steps
-Please install this plugin I have created
+- Please install this plugin I have created: ![link](https://github.com/AtrazineC/TDX-Collaborator-Resources/blob/main/TDX%20Plugin%20Lite.rbxm). The download button is in the top right corner.
+- To install the plugin locally, first insert the .rbxm you have downloaded. This can be done by going to the "MODEL" tab and inserting a model.
+![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/a8b5f4c1-007b-40d6-bc2c-adca70d78c97)
+- Next, right click on the plugin you just inserted, and click "Save as Local Plugin":
+![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/49275a6f-04a7-4b14-b05b-ce27720c17ef)
+- Finally, click save in the window that pops up:
+![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/b32f41f4-a544-4973-a29d-b3a5ec419277)
+- To open the plugin, go to the "PLUGINS" tab and open "Commands Lite":
+![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/e843e267-bb5e-4985-bf83-f1694e3897cb)
+- You should see several commands in a UI in the bottom of the screen:
+![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/b3601479-b04f-4067-9930-42e2f658faf0)
 
 ## Starting from scratch
 
