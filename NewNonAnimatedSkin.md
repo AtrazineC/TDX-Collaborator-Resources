@@ -7,7 +7,7 @@
 ![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/b82b71f7-12d5-4c79-8e95-bd8ede886b7c)
 
 ## First-time steps
-- Please install this plugin I have created: ![link](https://github.com/AtrazineC/TDX-Collaborator-Resources/blob/main/TDX%20Plugin%20Lite.rbxm). The download button is in the top right corner:
+- Please install this plugin I have created: ![link](TDX_Plugin_Lite.rbxmx). The download button is in the top right corner:
 ![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/eb487bd1-3040-4033-9234-6261db1fbb4c)
 - To install the plugin locally, first insert the .rbxm you have downloaded. This can be done by going to the "MODEL" tab and inserting a model.
 ![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/a8b5f4c1-007b-40d6-bc2c-adca70d78c97)
