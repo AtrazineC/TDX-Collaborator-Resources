@@ -1,5 +1,6 @@
 # New map format
-This guide will go over how to format a map properly for TDX.
+- This guide will go over how to format a map properly for TDX
+- Let me (Atrazine) know if you have any questions!
 
 # General guidelines
 - Ensure you're not doing too much with lighting effects such as saturation/contrast
@@ -57,14 +58,19 @@ Here is what the template contains initially:
 
 ## 1. Initial steps
 - Place the map template into your `.rbxl` file containing your map
-- Name the template the name of the map ![image](https://github.com/user-attachments/assets/a57e0502-f216-44c0-b433-59633e4987ee)
-- Put your name (preferably your Discord contact) in the Author `StringValue`. This is so I can contact you if there are issues ![image](https://github.com/user-attachments/assets/3bbf316e-2386-4f38-bab9-724b951c1cde)
+- Name the template the name of the map
+- Put your name (preferably your Discord contact) in the Author `StringValue`. This is so I can contact you if there are issues
+
+![image](https://github.com/user-attachments/assets/a57e0502-f216-44c0-b433-59633e4987ee)
+
+![image](https://github.com/user-attachments/assets/3bbf316e-2386-4f38-bab9-724b951c1cde)
 
 ## 2. LOSIgnore
 - Place objects/models that you don't want to affect tower's LOS here. For example, streetlights, thin trees, etc. should be placed here
 - Objects placed in LOSIgnore will still be respected for placement. For example, if a house is in LOSIgnore, it will not block LOS of towers, but towers can't be placed inside the house
 
 ![image](https://github.com/user-attachments/assets/16bc7a41-3177-4e44-b588-7757f63c160c)
+
 ![image](https://github.com/user-attachments/assets/1da06256-c047-4a0e-82e7-e4db86405978)
 
 ## 3. RaycastIgnore
@@ -73,10 +79,47 @@ Here is what the template contains initially:
 - Essentially, any parts you don't want affecting tower placement should be placed here
 
 ![image](https://github.com/user-attachments/assets/f18ccba6-7aef-410e-9a1d-4abc55b6e890)
+
 ![image](https://github.com/user-attachments/assets/6d06c619-1129-41fd-8365-b668ff0cf1e9)
 
-
-## 2. LightingEffects
+## 4. LightingEffects
 - Place all effects in Lighting such as `Sky`, `Bloom`, etc. instances in LightingEffects. 
 
 ![image](https://github.com/user-attachments/assets/44abaff3-7ae6-455d-8482-226068bbbe40)
+
+## 5. Zones
+
+![image](https://github.com/user-attachments/assets/2ba3de15-cd21-4bd8-8e63-7cf11113fa34)
+
+### 5.1 Path
+- If the path is not composed of simple parts, we need to cover it with parts for the raycasting. This is because Roblox's raycasting is not accurate enough for mesh/union paths
+- For example, in the map "Singularity," the path is a complex mesh, so these parts must be manually placed for collision purposes
+
+![image](https://github.com/user-attachments/assets/a6ee8e38-b8a1-4471-95ab-ce365b3a6e5b)
+
+- These parts should be placed inside the Path folder, and should be made invisible once complete
+
+![image](https://github.com/user-attachments/assets/f0ab3510-5132-4157-8a34-9da910f11a2a)
+
+- These manual parts are **NOT needed if the path is composed of simple parts**. If the path is composed of simple parts, check the `UsePathHighlight` box and leave the folder empty
+
+![image](https://github.com/user-attachments/assets/38dcd4f9-fb03-4a02-b28b-fae31789ae3a)
+
+### 5.2 Water
+- If your map contains water that is a regular Roblox part, place those parts inside the Water folder
+- If your map doesn't use Roblox parts for water, or the water is Roblox Terrain, leave the Water folder empty
+
+![image](https://github.com/user-attachments/assets/6e10f18f-bbe3-4aa6-80b6-72e7332aadf7)
+
+### 5.3 MaxHeight/MinHeight
+- Place the MaxHeight/MinHeight parts at the maximum/minimum heights towers can be placed respectively
+- For example, the MaxHeight/MinHeight on this map might be this rock formation/slightly below the start of the cliff respectively
+
+![image](https://github.com/user-attachments/assets/00b1e5ff-c839-449b-b6e2-28cfcccbac3f)
+_MaxHeight_
+
+![image](https://github.com/user-attachments/assets/419080ce-0ae0-4ca4-b7c6-1a93d7e334fd)
+_MinHeight_
+
+### 5.4 RangeDisplayHeight
+- On most maps, this is not needed. You can just leave this part as it is
