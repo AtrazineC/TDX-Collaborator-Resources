@@ -172,3 +172,39 @@ end
 
 ![image](https://github.com/user-attachments/assets/1db57549-f188-4505-9bfd-f91c055459da)
 
+## 10. Nodes
+- Last step will be to place the nodes
+
+![image](https://github.com/user-attachments/assets/fdc6b919-58af-44be-ae56-bc2603802217)
+
+- Place the Spawn1 and End nodes in the entrance/exit respectively. The nodes should be halfway inside the entrance/exit
+
+![image](https://github.com/user-attachments/assets/254d0661-4239-4d78-85d1-6482566b06d8)
+
+![image](https://github.com/user-attachments/assets/e36a25f5-4697-46c3-8d5d-9c059f0d4f34)
+
+- The **center** of each node part is used as the location for that node. Hence make sure the center is on the surface of whatever the enemies should be walking on
+
+![image](https://github.com/user-attachments/assets/e2f80dff-65d1-4bd5-86b0-996717c1809c)
+
+- For slopes, ensure any point where there is a change in the slope contains a node. The node should be centered around wherever the change in slope occurs
+
+![image](https://github.com/user-attachments/assets/1d10b57a-b3f6-4b97-b055-a65522309863)
+
+![image](https://github.com/user-attachments/assets/8c86d254-21c9-4bb6-952b-32c9ee52d913)
+
+- Once all nodes are placed, we need to join the nodes. Select the nodes sequentially, starting from Spawn1, then selecting all the nodes in order, then finally selecting End. Once all nodes are selected in the proper order, run the following code in the command bar
+```lua
+local Selections = game.Selection:Get()
+
+for i = 1, #Selections - 1 do
+	local Node1 = Selections[i]
+	local Node2 = Selections[i + 1]
+	Node1.Next.Value = Node2
+end
+```
+
+- You do not need a lot of nodes as my code smoothes out the movement automatically. This is how the nodes look in Singularity for example
+
+![image](https://github.com/user-attachments/assets/85216fbc-8c80-4ac5-8d5e-6e786ce8962a)
+
