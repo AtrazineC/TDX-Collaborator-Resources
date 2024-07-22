@@ -123,3 +123,52 @@ _MinHeight_
 
 ### 5.4 RangeDisplayHeight
 - On most maps, this is not needed. You can just leave this part as it is
+
+## 6. SpawnLocation
+- Place this somewhere near the middle of the map, perhaps favoring towards where the entrance is
+- Feel free to adjust the appearance/transparency of the spawn
+
+![image](https://github.com/user-attachments/assets/fdf8a7fd-81d7-4b1c-9dc7-f63d18fedc22)
+
+## 7. PathHighlight
+- Place all parts that should be highlighted during placement in here
+
+![image](https://github.com/user-attachments/assets/79066f90-bc21-4415-94e8-6c08e73f9073)
+
+## 8. Map
+- All other parts in your map should be placed inside this model
+- These objects will block LOS and will be included in raycasts
+
+![image](https://github.com/user-attachments/assets/87db141a-974b-4587-b3c7-be32adb8de64)
+
+## 9. LightingData
+- We need to save the settings you have set in Lighting. In Studio, select the LightingData object. Make sure this is the only thing you have selected
+
+![image](https://github.com/user-attachments/assets/4bcf7e76-486a-4fa5-867b-bebeae2e6258)
+
+- Then, copy the following code and run it in the command bar
+```lua
+-- Write lighting data to config
+local Lighting = game:GetService("Lighting")
+local Config = game.Selection:Get()[1]
+
+for Attribute, Value in Config:GetAttributes() do
+	local LightingValue = Lighting[Attribute]
+
+	if LightingValue then
+		Config:SetAttribute(Attribute, LightingValue)
+		print(tostring(Attribute) .. ": " .. tostring(Value) .. " -> " .. tostring(LightingValue))
+
+		if Attribute == "ClockTime" and LightingValue < 0 then
+			warn("ClockTime is negative!!!")
+		end
+	else
+		warn(tostring(Attribute) .. " not found in Lighting")
+	end
+end
+```
+
+- You should see that your Lighting settings such as Ambient should be copied over to this object
+
+![image](https://github.com/user-attachments/assets/1db57549-f188-4505-9bfd-f91c055459da)
+
