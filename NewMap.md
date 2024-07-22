@@ -47,7 +47,7 @@ Now, your materials under `MaterialService` should look something like this for 
 
 # Template
 - Template download (Discord): https://discord.com/channels/1071945224579973160/1165740168473489519/1264659080405057700
-- Example map download (Discord): https://discord.com/channels/1071945224579973160/1165740168473489519/1264287561095057450
+- Example of set up map (Discord): https://discord.com/channels/1071945224579973160/1165740168473489519/1264287561095057450
 
 Here is what the template contains initially:
 
@@ -60,7 +60,23 @@ Here is what the template contains initially:
 - Name the template the name of the map ![image](https://github.com/user-attachments/assets/a57e0502-f216-44c0-b433-59633e4987ee)
 - Put your name (preferably your Discord contact) in the Author `StringValue`. This is so I can contact you if there are issues ![image](https://github.com/user-attachments/assets/3bbf316e-2386-4f38-bab9-724b951c1cde)
 
+## 2. LOSIgnore
+- Place objects/models that you don't want to affect tower's LOS here. For example, streetlights, thin trees, etc. should be placed here
+- Objects placed in LOSIgnore will still be respected for placement. For example, if a house is in LOSIgnore, it will not block LOS of towers, but towers can't be placed inside the house
+
+![image](https://github.com/user-attachments/assets/16bc7a41-3177-4e44-b588-7757f63c160c)
+![image](https://github.com/user-attachments/assets/1da06256-c047-4a0e-82e7-e4db86405978)
+
+## 3. RaycastIgnore
+- Place objects/models that you don't want to affect tower placement or LOS of towers. For example, grass, small foiliage, etc.
+- Invisible parts should also be placed here
+- Essentially, any parts you don't want affecting tower placement should be placed here
+
+![image](https://github.com/user-attachments/assets/f18ccba6-7aef-410e-9a1d-4abc55b6e890)
+![image](https://github.com/user-attachments/assets/6d06c619-1129-41fd-8365-b668ff0cf1e9)
+
 
 ## 2. LightingEffects
 - Place all effects in Lighting such as `Sky`, `Bloom`, etc. instances in LightingEffects. 
 
+![image](https://github.com/user-attachments/assets/44abaff3-7ae6-455d-8482-226068bbbe40)
