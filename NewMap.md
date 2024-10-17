@@ -172,7 +172,42 @@ end
 
 ![image](https://github.com/user-attachments/assets/1db57549-f188-4505-9bfd-f91c055459da)
 
-## 10. Nodes
+## 10. CloudsConfig
+- If your map uses Clouds, run the following code:
+```lua
+-- Write cloud data to config
+local Clouds = workspace.Terrain:FindFirstChildOfClass("Clouds")
+
+if not Clouds then
+	warn("Clouds not found in Lighting")
+	return
+end
+
+local Config = Instance.new("Configuration", workspace)
+Config.Name = "CloudsConfig"
+
+local Attributes = {
+	"Cover",
+	"Density",
+	"Color",
+}
+
+for _, Attribute in ipairs(Attributes) do
+	local CloudsValue = Clouds[Attribute]
+
+	if CloudsValue then
+		Config:SetAttribute(Attribute, CloudsValue)
+	else
+		warn(tostring(Attribute) .. " not found in Clouds")
+	end
+end
+```
+
+- This will create an object named "CloudsConfig"; place this under the main map folder:
+
+![image](https://github.com/user-attachments/assets/cdba8e78-4f49-43e6-b433-3a2ec33be17d)
+
+## 11. Nodes
 - Last step will be to place the nodes
 
 ![image](https://github.com/user-attachments/assets/fdc6b919-58af-44be-ae56-bc2603802217)
