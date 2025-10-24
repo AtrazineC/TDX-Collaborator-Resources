@@ -258,3 +258,10 @@ end
 print("Worst-case particle count:", Total)
 ```
 The worst-case particle count should be less than 2000. Consult with me if there is a reason it needs to be more than 2000.
+
+You can save particles while maintaining fidelity by:
+- Decreasing the rate
+- Decreasing the lifetime
+- Decreasing transparency to offset thinness caused from rate/lifetime decrease
+- Adjusting speed/acceleration accordingly if the lifetime is changed
+- Remove small particles from emitters that are far away (for example, the sparks in fire VFX are not really visible in fires far away)
