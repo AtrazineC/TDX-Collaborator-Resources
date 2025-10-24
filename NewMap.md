@@ -243,3 +243,18 @@ end
 
 ![image](https://github.com/user-attachments/assets/85216fbc-8c80-4ac5-8d5e-6e786ce8962a)
 
+## 12. [NEW] ParticleEmitter check
+Particles should be used sparingly. Select the map folder and run this script in the command bar:
+```
+-- Select the map folder
+local Total = 0
+
+for _, Item: ParticleEmitter in pairs(game.Selection:Get()[1]:GetDescendants()) do
+    if Item.ClassName == "ParticleEmitter" then
+        Total += Item.Rate * Item.Lifetime.Max
+    end
+end
+
+print("Worst-case particle count:", Total)
+```
+The worst-case particle count should be less than 2000. Consult with me if there is a reason it needs to be more than 2000.
