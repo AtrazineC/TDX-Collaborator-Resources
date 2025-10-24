@@ -245,7 +245,7 @@ end
 
 ## 12. [NEW] ParticleEmitter check
 Particles should be used sparingly. Select the map folder and run this script in the command bar:
-```
+```lua
 -- Select the map folder
 local Total = 0
 
