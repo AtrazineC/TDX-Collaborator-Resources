@@ -11,20 +11,26 @@ A non-animated skin swaps the tower's parts for your own meshes but keeps the to
 ### Get the files
 - From Discord:
   - [`SkinWorkshop.rbxl`](https://discord.com/channels/1307254435579170827/1474445894970507418/1567655506569592913): the place you'll work in.
-  - [`SkinPreview.rbxmx`](https://discord.com/channels/1307254435579170827/1474445894970507418/1567655382921257132): the Skin Preview plugin.
+  - [`SkinPreview.rbxmx`](https://discord.com/channels/1307254435579170827/1474445894970507418/1567670296188682313): the Skin Preview plugin.
 - From this page: [`TDX_Plugin_Lite.rbxmx`](TDX_Plugin_Lite.rbxmx), a plugin with handy commands for formatting your skin. The download button is in the top right corner:
 ![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/eb487bd1-3040-4033-9234-6261db1fbb4c)
 
+You should have these 3 files:
+![image](https://github.com/user-attachments/assets/ab582626-b51f-401a-a6dc-73180d010ad9)
+
 ### Install the plugins
-https://github.com/user-attachments/assets/d70b086f-04f2-4b3d-bd50-18c9b4ef0dc9
 Do these steps once for `SkinPreview.rbxmx` and once for `TDX_Plugin_Lite.rbxmx`:
 1. Open any place in Studio. Click **File** > **Import Roblox Model** and pick the file you downloaded:
 ![The File menu with Import Roblox Model highlighted](Images/import_roblox_model.png)
 2. In the Explorer, right-click what you just added and click **Save as Local Plugin...**:
-![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/49275a6f-04a7-4b14-b05b-ce27720c17ef)
+![image](https://github.com/user-attachments/assets/7b0b9c55-8bb2-4d5f-a5ac-630fc5668798)
 3. Click **Save** in the window that pops up. Keep the file name it suggests.
 ![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/b32f41f4-a544-4973-a29d-b3a5ec419277)
 4. Delete what you added from the Explorer. The plugin is installed, so you don't need it any more.
+
+Video guide on installing the plugins:
+
+https://github.com/user-attachments/assets/8da06ab0-e3d6-4ece-881f-9bf9197aaee7
 
 ### Open them
 - **Skin Preview:** open `SkinWorkshop.rbxl`. The **TDX Skin Preview** panel opens by itself. If you close it, click **Skin Preview** in the **PLUGINS** tab.
@@ -37,6 +43,10 @@ Do these steps once for `SkinPreview.rbxmx` and once for `TDX_Plugin_Lite.rbxmx`
 On the plugin's start page:
 - **Open an example** adds a copy of a finished skin to Workspace. It's only a copy, so feel free to take it apart.
 - **Copy the *tower* rig** adds the tower's own models to Workspace, one for each level, so you can see what every part is called.
+
+Video:
+
+https://github.com/user-attachments/assets/ad136b47-e686-4082-a45d-32508c533a92
 
 ## How a skin is set up
 Your skin is a Folder named after the skin. Inside it is one Model for each tower level:
@@ -65,6 +75,8 @@ Place everything around the root where it should sit on the tower when it's stan
 
 Your skin appears in the middle of the baseplate on the real tower, playing its animations. The original tower stands next to it.
 
+https://github.com/user-attachments/assets/e4ab4490-1262-4a0d-bf00-17140ae0eba3
+
 **Preview tab**
 - Pick a level from the level list.
 - That level's model also stands behind the preview, standing still. Edit it there and the preview updates right away. It goes back to its old spot when you switch levels or click **Exit**.
@@ -80,6 +92,10 @@ Your skin appears in the middle of the baseplate on the real tower, playing its 
 - Lists every part of the tower for this level, and whether your skin replaces it.
 - To name one of your parts, select it in the Explorer, then click **Name it** next to the tower part it replaces.
 - **Effect points** are where effects like muzzle flashes start. If your gun's barrel isn't where the default gun's is, click **Move it**. A bright pink ball appears where the effect starts now. Drag it to the end of your barrel.
+
+Example of moving the muzzle VFX:
+
+https://github.com/user-attachments/assets/519734e6-edf3-47a2-8e72-4522b36d8f9d
 
 ## Send it
 When the Checks tab shows no errors, click **Save skin file to send** at the bottom. Save the `.rbxm` file and send it to the TDX team on Discord.
