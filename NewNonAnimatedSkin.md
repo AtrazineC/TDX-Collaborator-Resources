@@ -97,6 +97,9 @@ Example of moving the muzzle VFX:
 
 https://github.com/user-attachments/assets/519734e6-edf3-47a2-8e72-4522b36d8f9d
 
+## Video guide
+Here's a video going through the process of setting up a non-animated skin correctly: https://youtu.be/0VRqXq3-voY
+
 ## Send it
 When the Checks tab shows no errors, click **Save skin file to send** at the bottom. Save the `.rbxm` file and send it to the TDX team on Discord.
 
