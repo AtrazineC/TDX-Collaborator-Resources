@@ -17,8 +17,8 @@ A non-animated skin swaps the tower's parts for your own meshes but keeps the to
 
 ### Install the plugins
 Do these steps once for `SkinPreview.rbxmx` and once for `TDX_Plugin_Lite.rbxmx`:
-1. Open any place in Studio. In the **MODEL** tab, click **Model** and pick the file you downloaded:
-![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/a8b5f4c1-007b-40d6-bc2c-adca70d78c97)
+1. Open any place in Studio. Click **File** > **Import Roblox Model** and pick the file you downloaded:
+![The File menu with Import Roblox Model highlighted](Images/import_roblox_model.png)
 2. In the Explorer, right-click what you just added and click **Save as Local Plugin...**:
 ![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/49275a6f-04a7-4b14-b05b-ce27720c17ef)
 3. Click **Save** in the window that pops up. Keep the file name it suggests.
