@@ -11,7 +11,7 @@ A non-animated skin swaps the tower's parts for your own meshes but keeps the to
 ### Get the files
 - From Discord:
   - [`SkinWorkshop.rbxl`](https://discord.com/channels/1307254435579170827/1474445894970507418/1567655506569592913): the place you'll work in.
-  - [`SkinPreview.rbxmx`](https://discord.com/channels/1307254435579170827/1474445894970507418/1567674971889733632): the Skin Preview plugin.
+  - [`SkinPreview.rbxmx`](https://discord.com/channels/1307254435579170827/1474445894970507418/1568464051028369470): the Skin Preview plugin.
 - From this page: [`TDX_Plugin_Lite.rbxmx`](TDX_Plugin_Lite.rbxmx), a plugin with handy commands for formatting your skin. The download button is in the top right corner:
 ![image](https://github.com/AtrazineC/TDX-Collaborator-Resources/assets/53621618/eb487bd1-3040-4033-9234-6261db1fbb4c)
 
